@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import "primereact/resources/themes/lara-dark-cyan/theme.css";
+import 'primeicons/primeicons.css';
+import  {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+        
+import Header from './Header';
+import Recipe from './Recipe';
+import Country from './Country';
+import Category from './Category';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Recipe></Recipe>}></Route>
+          <Route path='/category' element={<Category></Category>}></Route>
+          <Route path='/country' element={<Country></Country>}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

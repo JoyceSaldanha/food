@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-container {
+  margin:2rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:2rem;
+}
+
+.card {
+  padding: 10px;
+  border: 1px solid black;
+  background: blue;
+}
+
+.image-style {
+  width: 8rem;
+}
