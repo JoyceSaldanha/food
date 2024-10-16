@@ -7,6 +7,7 @@ import Header from './Header';
 import Recipe from './Recipe';
 import Country from './Country';
 import Category from './Category';
+import CategoryDetails from './CategoryDetails';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' element={<Recipe></Recipe>}></Route>
           <Route path='/category' element={<Category></Category>}></Route>
           <Route path='/country' element={<Country></Country>}></Route>
+          <Route path='/:categoryName' element={<CategoryDetails></CategoryDetails>}></Route>
         </Routes>
       </Router>
     </div>

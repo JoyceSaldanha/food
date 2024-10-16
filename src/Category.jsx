@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Category() {
     let [categoryData,setCategoryData] = useState([]);
+    let navigate = useNavigate();
 
     useEffect(() => {
         fetchFoodCategory();
@@ -17,7 +19,7 @@ export default function Category() {
 
     let category = categoryData.map((item,i) => {
         return(
-            <div key={i}>
+            <div key={i} className='category-card' onClick={() => navigate(`/${item.strCategory}`)}>
                 <img src={item.strCategoryThumb} alt="no" className='image-style'></img>
                 <h4>{item.strCategory}</h4>
             </div>

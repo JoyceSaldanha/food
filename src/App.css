@@ -56,6 +56,12 @@
   background: blue;
 }
 
+.category-card {
+  cursor:pointer;
+  border: 1px solid grey;
+  background: rgb(112, 30, 30);
+}
+
 .image-style {
   width: 8rem;
 }
