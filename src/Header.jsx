@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/inputtext';
 
@@ -26,6 +26,11 @@ export default function Header() {
             label: 'Country',
             icon: 'pi pi-reddit',
             url: '/country'
+        },
+        {
+            label: 'Random Meal',
+            icon: 'pi pi-circle-fill',
+            url: '/random'
         }
     ];
 

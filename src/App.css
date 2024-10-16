@@ -65,3 +65,8 @@
 .image-style {
   width: 8rem;
 }
+
+.meal-container {
+  display: flex;
+  justify-content: center;
+}

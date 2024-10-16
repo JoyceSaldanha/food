@@ -8,6 +8,7 @@ import Recipe from './Recipe';
 import Country from './Country';
 import Category from './Category';
 import CategoryDetails from './CategoryDetails';
+import Random from './Random';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/category' element={<Category></Category>}></Route>
           <Route path='/country' element={<Country></Country>}></Route>
           <Route path='/:categoryName' element={<CategoryDetails></CategoryDetails>}></Route>
+          <Route path='/random' element={<Random></Random>}></Route>
         </Routes>
       </Router>
     </div>
