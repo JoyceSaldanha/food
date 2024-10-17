@@ -17,8 +17,12 @@ export default function Random() {
 
   return (
     <div className='meal-container'>
-        <h1>{randomMeal.strMeal}</h1>
-        <img src={randomMeal.strMealThumb} alt="no" className='image-style'></img>
+        <div className='meal'>
+            <h1>{randomMeal.strMeal}</h1>
+            <img src={randomMeal.strMealThumb} alt="no" className='meal-style'></img>
+            <h4>Category - {randomMeal.strCategory}</h4>
+            <h4>Origin - {randomMeal.strArea}</h4>
+        </div>
     </div>
   )
 }
